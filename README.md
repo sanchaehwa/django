@@ -1,2 +1,1 @@
 # django
-For django📓 
