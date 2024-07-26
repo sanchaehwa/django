@@ -4,9 +4,6 @@ from django.shortcuts import render, redirect
 from common.forms import UserForm
 
 # Create your views here.
-def logout_view(request):
-    logout(request)
-    return redirect('index')
 
 def signup(request):
     if request.method == 'POST':
@@ -20,4 +17,7 @@ def signup(request):
             return redirect('index')
     else:
         form = UserForm()
-        return render(request, 'common/signup.html',{'form':form})
+    return render(request, 'common/signup.html',{'form':form})
+
+def page_not_found(request, exception):
+    return render(exception, 'common/404.html', {})
