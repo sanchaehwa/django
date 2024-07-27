@@ -6,6 +6,7 @@ app_name = 'pybo'
 
 urlpatterns = [
     # base
+    # path('', base_views.index, name='index'),
     path('', base_views.index, name='index'),
     path('<int:question_id>/', base_views.detail, name='detail'),
 
