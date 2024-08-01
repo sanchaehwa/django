@@ -6,3 +6,8 @@ Django 탬플릿을 활용하여 프론트엔드 개발도 다른 기술 없이 
 >다만, 기능이 많은 만큼 무겁고 복잡하여,  <span style="background-color:#DCFFE4">다른 python 프레임워크,(Flask)와 비교하면 자유도가 떨어지는게 단점임.  </span>
 
 #### Django 프로세스 동작방식
+request가 들어오면 URL에 따라 지정된 view를 호출하고 정해진 Response를 보내는 방식으로 작동함.<br>
+**해당 프로젝트 Django 프로세스 동작방식** <br>
+admin : request (admin /) -> admin site 로 매핑 <br>
+pybo : request (pybo /) -> pybo urls setting file 로 매핑 -> <br>
+common : request(common /) -> 
